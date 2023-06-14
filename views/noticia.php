@@ -5,7 +5,6 @@ include("blades/header.php");
     <?php include '../css/style.css'; ?>
 </style>
 <?php
-
 ?>
 <div class="container voltar"class="d-flex justify-content-center">
 <div id="menuLeft" class="d-flex justify-content-center">

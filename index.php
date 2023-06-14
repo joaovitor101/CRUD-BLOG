@@ -1,6 +1,7 @@
 <?php
 include("models/conexao.php");
 include("views/blades/header.php");
+session_start();
 ?>
 <style>
     <?php include 'css/style.css'; ?>
@@ -11,10 +12,14 @@ include("views/blades/header.php");
     <a class="btn rounded" id="textHeader"href="views/verUsuarios.php">USUÁRIOS</a>
     <a class="btn rounded" id="textHeader"href="views/novaNoticia.php">NOVA NOTÍCIA</a>
     <a class="btn rounded" id="textHeader"href="views/novoUsuario.php">NOVO USUÁRIO</a>
+    <a class="btn btn-primary rounded" id="textHeader"href="cms/index.php">LOGIN</a>
+    <a class="btn btn-primary rounded" id="textHeader"href="../controllers/index.php">LOGOUT</a>
 </div>
 </div>
 <div id="mainContent" class="text-center d-flex justify-content-center">
-
+<div class="text-white">
+    <h3 id="a">Bem vindo, <?php echo $_SESSION['usuario']?></h3>
+</div>
     <div id="lista-noticias" class="mt-5">
         <h1>Notícias</h1>
 

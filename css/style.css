@@ -12,6 +12,9 @@ a{
     all:unset;
 }
 
+#a{
+    position: absolute;
+}
 
 .site{
     font-size: 30px;
@@ -26,6 +29,9 @@ a{
 }
 #textHeader{
     font-size: 20px;
+}
+#login{
+    background-image: url(https://rare-gallery.com/mocahbig/445446-leaves-macro-dark-foliage-depth-of-field.png);
 }
 #menuLeft {
     background-color:rgba(255, 255, 255, 0.6);

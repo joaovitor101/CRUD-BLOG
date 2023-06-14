@@ -12,7 +12,7 @@ $ImgNameRandom = md5($ImgName) . "." . $extension;
 if ($extension == "png") {
     move_uploaded_file($arquivo['tmp_name'][0], $diretorio . "/" . $ImgNameRandom);
 } else {
-    die("Arquivo não é compatível com o tipo 'PNG'");
+    exit("Arquivo não é compatível com o tipo 'PNG'");
 }
 
 mysqli_query($conexao, "INSERT INTO imgs(imgNome, imgNomeAleatorio) VALUES ('$ImgName', '$ImgNameRandom')");
