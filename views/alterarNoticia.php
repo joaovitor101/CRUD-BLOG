@@ -8,7 +8,7 @@ include("../models/conexao.php");
 
 <div class="container voltar"class="d-flex justify-content-center">
 <div id="menuLeft" class="d-flex justify-content-center">
-    <a class="btn rounded lbl-button" id="btn-voltar" href="../index.php">Voltar</a>
+    <a class="btn rounded lbl-button" id="btn-voltar" href="painel.php">Voltar</a>
 </div>
 </div>
 
@@ -59,8 +59,7 @@ where noticiaId = $PostagemCodigo");
 
                         </b>
                         <hr>
-                        <textarea class="form-control" type="text" name="noticiaCorpo"><?php echo $exibe[9] ?>                                       
-                                                                </textarea>
+                        <textarea class="form-control" type="text" name="noticiaCorpo" ><?php echo $exibe[9] ?></textarea>
                     </td>
                 </tr>
                 <tr>

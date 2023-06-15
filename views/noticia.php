@@ -17,7 +17,7 @@ include("blades/header.php");
 
         <?php
         $varPostagemCodigo = $_GET["postagemCodigo"];
-        $query = mysqli_query($conexao, "SELECT * FROM NOTICIAS 
+        $query = mysqli_query($conexao, "SELECT * FROM noticias
         INNER JOIN imgs ON noticiaImgId = imgId
         INNER JOIN infos ON noticiaInfoId = infoId
         INNER JOIN usuarios ON noticiaUsuarioId = usuarioId
@@ -53,7 +53,7 @@ include("blades/header.php");
                 </td>
             </tr>
             <?php
-            $queryDois = mysqli_query($conexao, "SELECT * FROM NOTICIAS 
+            $queryDois = mysqli_query($conexao, "SELECT * FROM noticias
                     INNER JOIN imgs ON noticiaImgId = imgId
                     INNER JOIN infos ON noticiaInfoId = infoId
                     INNER JOIN usuarios ON noticiaUsuarioId = usuarioId where noticiaUsuarioId = $exibe[3] and noticiaId != $exibe[0]");

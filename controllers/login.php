@@ -10,7 +10,7 @@ if ($exibe = mysqli_fetch_array($query)){
     session_start();
     $_SESSION['usuario']= $exibe[1];
     $_SESSION['senha']= $exibe[2];
-    header("location: ../index.php");
+    header("location: ../views/painel.php");
     }
     }
     

@@ -37,6 +37,6 @@ $id_noticiaInfo_last = mysqli_insert_id($conexao);
 mysqli_query($conexao, "INSERT INTO noticias (noticiaImgId, noticiaInfoId, noticiaUsuarioId) 
 VALUES ('$id_imgTable_last', '$id_noticiaInfo_last' , '$PostagemUsuarioCodigo');");
 
-header("location:../index.php");
+header("location:../views/painel.php");
 
 ?>
