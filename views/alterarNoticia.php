@@ -19,7 +19,6 @@ INNER JOIN imgs ON noticiaImgId = imgId
 INNER JOIN infos ON noticiaInfoId = infoId
 INNER JOIN usuarios ON noticiaUsuarioId = usuarioId
 where noticiaId = $PostagemCodigo");
-
 ?>
 <div class="container p-5 rounded shadow mt-5" id="attPost">
     <table border='1' width="800px" class="table  ">

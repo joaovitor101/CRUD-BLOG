@@ -11,7 +11,7 @@ include("../views/blades/header.php");
             <div class="card bg-dark text-white">
             <h3 class="p-3">Login</h3>
                 <div class="card-body">
-                    <form action="../views/painel.php" method="POST">
+                    <form action="../controllers/login.php" method="POST">
                         <div class="mb-3">
                             <label>Usuario</label>
                             <input type="text" name="usuario" class="form-control">
