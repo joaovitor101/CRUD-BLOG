@@ -15,6 +15,8 @@ include("../views/blades/header.php");
     <label class="form-label lbl-input mt-4 fs-5 text-white">Bem Vindo
         <?php echo $_SESSION["usuario"] ?>
     </label>
+    <br>
+    <a class="fw-bold btn btn-danger" href="../controllers/logout.php">Deslogar</a>
     <hr class="border border-light border-2 opacity-75">
     <br>
     <h3 class="fw-bold">Criar notícia</h3>

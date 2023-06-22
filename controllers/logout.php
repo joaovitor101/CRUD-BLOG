@@ -1,6 +1,9 @@
 <?php
 session_start();
-    if(session_destroy()){
-        header("location:../index.php");
-    }
+unset($_SESSION["usuario"]);
+unset($_SESSION["email"]);
+unset($_SESSION['senha']);
+unset($_SESSION['usuarioCodigo']);
+session_destroy();
+header("Location: ../cms/index.php")
 ?>
