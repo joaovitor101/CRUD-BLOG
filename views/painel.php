@@ -90,7 +90,7 @@ include("../views/blades/header.php");
                 Data:
                 <?php echo $exibe[10] ?>
                 <hr>
-                <?php echo wordwrap($exibe[9], 20, "<br/> ", true) ?>
+                <?php echo wordwrap($exibe[9], 20) ?>
             </td>
             <td class="text-center align-middle">
                 <a class="btn btn-primary d-grid" href="alterarNoticia.php?postagemCodigo=<?php echo $exibe[0] ?>">Editar</a>
